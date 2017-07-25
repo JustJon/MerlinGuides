@@ -1,0 +1,11 @@
+<script>
+	if(document.readyState === 'ready' || document.readyState === 'complete') {
+		alert('Page loaded');
+	} else {
+		document.onreadystatechange = function () {
+			if (document.readyState == "complete") {
+				alert('Page fully loaded');
+			}
+		}
+	}
+</script>
